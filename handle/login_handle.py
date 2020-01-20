@@ -23,3 +23,7 @@ class LoginHandle(object):
         # 点击按钮
     def btn_submit(self):
         self.login_page.get_btn_element().click()
+
+    #退出登录按钮
+    def logout_btn(self):
+        return self.login_page.get_logout_btn().text()
